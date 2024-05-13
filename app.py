@@ -37,6 +37,7 @@ app = dash.Dash(
     __name__,
     external_stylesheets=["https://fonts.googleapis.com/css2?family=Roboto&display=swap"]
 )
+server = app.server
 
 # Adjusted layout with CSS for static and scrollable sections
 app.layout = html.Div([
