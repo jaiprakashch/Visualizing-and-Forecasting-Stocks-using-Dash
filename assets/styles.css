@@ -1,0 +1,114 @@
+/* Resetting some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppin", sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Main container styling */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+/* Navigation/sidebar styling */
+.nav {
+  width: 20%;
+  background-color: #0ba096;
+  color: #FFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.start {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #6f6805;
+}
+
+.input-place, .date, .buttons {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-place p, .form button, .buttons button {
+  font-size: 1rem;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.form input[type="text"] {
+  flex-grow: 10;
+  padding: 10px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #F2B134;
+  border: color(srgb rgb(228, 169, 169) rgb(207, 16, 198) blue);
+  cursor: pointer;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  background-color: #FF6F61;
+  color: #FFF;
+  padding: 10px 20px;
+  border: color(srgb-linear red green blue);
+  cursor: pointer;
+  margin: 4px;
+}
+
+/* Content styling */
+.content {
+  flex-grow: 2;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.header, .description_ticker {
+  margin-bottom: 20px;
+}
+
+.header img {
+  max-width: 50px;
+  height: auto;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: row;
+  }
+
+  .nav {
+      width: 100%;
+      height: auto;
+  }
+
+  .content {
+      width: 100%;
+  }
+}
+
